@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="superman" class="com.mandeepa.springXML.Superman" scope="singleton">
+        <constructor-arg name="powerLevel" value="Ultra"/>
+        <constructor-arg name="experience" value="5"/>
+    </bean>
+
+    <bean id="wonderWoman" class="com.mandeepa.springXML.WonderWoman" scope="prototype"/>
+
+    <bean id="talkingCat" class="com.mandeepa.springXML.TalkingCat" scope="singleton"/>
+</beans>
