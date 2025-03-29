@@ -1,0 +1,13 @@
+1. What does singleton scope mean in Spring?
+
+Only one instance of the bean is created and shared across the entire Spring container.
+
+2. What is the difference between singleton and prototype?
+Singleton is a single shared instance for the full application.
+The prototype is an instance created each time the bean is required.
+
+3. How does Spring know which constructor to use in XML?
+Check the type of arguments provided in the constructor arg element and match it with the constructor.
+
+4. What will happen if you try to inject values into a bean but the constructor doesn't match?
+Throw an exception for the BeanCreationException if provides the incorrect type of argument.
